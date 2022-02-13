@@ -23,24 +23,3 @@ class UserCreateSerializer(UserCreateSerializer):
             'saturday',
             'payrate'
         )
-
-class CustomUserSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta(UserSerializer.Meta):
-        model = User
-        fields = (
-            'id',
-            'email',
-            'username',
-            'password',
-            'avatar',
-            'skills',
-            'portfolio',
-            'sunday',
-            'monday',
-            'tuesday',
-            'wednesday',
-            'thursday',
-            'friday',
-            'saturday',
-            'payrate'
-        )
