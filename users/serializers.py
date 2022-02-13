@@ -1,4 +1,4 @@
-from djoser.serializers import UserCreateSerializer
+from djoser.serializers import UserCreateSerializer, UserSerializer
 from rest_framework import serializers
 from . import models
 from .models import User
@@ -25,7 +25,7 @@ class UserCreateSerializer(UserCreateSerializer):
         )
 
 class CustomUserSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
+    class Meta(UserSerializer.Meta):
         model = User
         fields = (
             'id',
