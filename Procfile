@@ -1,0 +1,1 @@
+web: gunicorn django_indecoders_back.wsgi
