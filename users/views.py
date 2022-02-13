@@ -10,9 +10,6 @@ class UserList(generics.ListCreateAPIView):
     serializer_class = CustomUserSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
-    def perform_create(self, serializer):
-        serializer.save(owner=self.request.user)
-
 class UserDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = User.objects.all()
     serializer_class = CustomUserSerializer
