@@ -8,7 +8,6 @@ class User(AbstractUser):
     bio = models.CharField(max_length=500, blank=True)
     skills = models.CharField(max_length=500, blank=True)
     portfolio = models.CharField(max_length=500, blank=True)
-    availabilty = models.CharField(max_length=500, blank=True)
     payrate = models.IntegerField(default=0)
     REQUIRED_FIELDS = ['username']
     USERNAME_FIELD = 'email'

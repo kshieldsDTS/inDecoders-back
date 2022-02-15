@@ -13,7 +13,6 @@ class UserCreateSerializer(UserCreateSerializer):
             'bio',
             'skills',
             'portfolio',
-            'availability',
             'payrate',
         )
 
@@ -27,6 +26,5 @@ class CustomUserSerializer(serializers.HyperlinkedModelSerializer):
             'bio',
             'skills',
             'portfolio',
-            'availability',
             'payrate',
         )
