@@ -13,7 +13,6 @@ class LFWork(models.Model):
     thursday = models.BooleanField(default=False)
     friday = models.BooleanField(default=False)
     saturday = models.BooleanField(default=False)
-    availability = models.CharField(max_length=100, blank=True)
     payrate_desired = models.IntegerField(default=0)
     
     def __str__(self):
@@ -33,7 +32,6 @@ class LFHelp(models.Model):
     thursday = models.BooleanField(default=False)
     friday = models.BooleanField(default=False)
     saturday = models.BooleanField(default=False)
-    availability_desired = models.CharField(max_length=100, blank=True)
     timeline = models.CharField(max_length=100, blank=True)
     payrate = models.IntegerField(default=0)
     def __str__(self):
