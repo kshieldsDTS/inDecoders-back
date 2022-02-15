@@ -10,18 +10,11 @@ class UserCreateSerializer(UserCreateSerializer):
             'id',
             'email',
             'username',
-            'password',
-            'avatar',
+            'bio',
             'skills',
             'portfolio',
-            'sunday',
-            'monday',
-            'tuesday',
-            'wednesday',
-            'thursday',
-            'friday',
-            'saturday',
-            'payrate'
+            'availability',
+            'payrate',
         )
 
 class CustomUserSerializer(serializers.HyperlinkedModelSerializer):
@@ -31,16 +24,9 @@ class CustomUserSerializer(serializers.HyperlinkedModelSerializer):
             'id',
             'email',
             'username',
-            'password',
-            'avatar',
+            'bio',
             'skills',
             'portfolio',
-            'sunday',
-            'monday',
-            'tuesday',
-            'wednesday',
-            'thursday',
-            'friday',
-            'saturday',
-            'payrate'
+            'availability',
+            'payrate',
         )

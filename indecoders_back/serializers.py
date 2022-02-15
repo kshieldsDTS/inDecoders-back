@@ -18,7 +18,6 @@ class LFWorkSerializer(serializers.HyperlinkedModelSerializer):
             'thursday',
             'friday',
             'saturday',
-            'availability',
             'payrate_desired',
         )
 
@@ -41,7 +40,6 @@ class LFHelpSerializer(serializers.HyperlinkedModelSerializer):
             'thursday',
             'friday',
             'saturday',
-            'availability_desired',
             'timeline',
             'payrate'
         )
